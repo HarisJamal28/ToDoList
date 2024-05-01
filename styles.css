@@ -1,0 +1,97 @@
+#Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Main #commands {
+  border: 2px solid black;
+  padding: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 20px;
+  box-shadow: 2px 5px 5px;
+}
+#Main #commands button {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+#Main #List-To-Dos {
+  display: flex;
+  text-align: left;
+  width: 50%;
+  flex-direction: column;
+  min-width: 250px;
+}
+#Main #List-To-Dos ul {
+  padding: 0px;
+  margin: 6px;
+}
+#Main #List-To-Dos ul aside {
+  padding: 5px;
+  min-width: 150px;
+}
+#Main #List-To-Dos ul aside button {
+  border: 1px solid black;
+  text-align: center;
+  padding-right: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#Main #List-To-Dos li {
+  border: 1px solid black;
+  margin: 1px;
+  padding: 5px;
+  min-width: 90%;
+  max-width: 90%;
+  transition: background-color 0.5s ease;
+}
+#Main #List-To-Dos li:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+#Main #History ul {
+  padding: 0px;
+  margin: 6px;
+}
+#Main #History ul aside {
+  padding: 5px;
+  min-width: 150px;
+}
+#Main #History ul aside button {
+  border: 1px solid black;
+  text-align: center;
+  padding-right: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#Main #History li {
+  border: 1px solid black;
+  margin: 1px;
+  padding: 5px;
+  min-width: 90%;
+  max-width: 90%;
+  transition: background-color 0.5s ease;
+}
+#Main #History li:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.Done {
+  text-decoration: line-through;
+}
+.Done:not(:hover) {
+  background-color: gray;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */
