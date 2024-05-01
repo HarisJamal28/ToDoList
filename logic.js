@@ -68,7 +68,29 @@ window.onload = function(){
         })
     })
 
+    if(historyContain.innerHTML == ''){
 
+    }else{
+        var div = document.createElement('div')
+        div.style.display = 'flex';
+        div.style.justifyContent = 'center';
+        div.style.alignItems = 'center';
+        // div.style.border = '1px solid black';
+        div.style.width = '100%';
+
+        var butt = document.createElement('button')
+        butt.innerHTML = '<i class="fa-solid fa-trash"></i>';
+        butt.style.padding = '9px'
+        butt.style.border = '1px solid black'
+        butt.style.marginTop = '10px'
+
+        butt.addEventListener('click',function(){
+            historyContain.innerHTML = '';
+        })
+
+        historyContain.appendChild(div);
+        div.appendChild(butt);
+    }
 }
 
 
@@ -76,4 +98,5 @@ function DeleteFromHistory(x){
     let y = document.getElementById(x);
     let parent = y.parentElement;
     parent.removeChild(y);
+    localStorage.clear();
 }
